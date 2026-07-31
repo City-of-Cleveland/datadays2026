@@ -1,6 +1,11 @@
-- name: Send mail
-  uses: dawidd6/action-send-mail@<REF>
-  with:
+name: Send mail
+on:
+  workflow_dispatch:
+jobs:
+  steps:
+    name: help
+    uses: dawidd6/action-send-mail@v17
+    with:
     # Specify connection via URL (replaces server_address, server_port, secure,
     # username and password)
     #
@@ -11,7 +16,7 @@
     # connection_url: ${{secrets.MAIL_CONNECTION}}
 
     # Required mail server address if not connection_url:
-    server_address: smtp-mail.outlook.com
+      server_address: smtp-mail.outlook.com
 
     # Server port, default 25:
     server_port: 465
