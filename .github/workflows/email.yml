@@ -1,0 +1,21 @@
+name: 'Test workflow'
+
+on: workflow_dispatch
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Convert Notebook"
+        run: |
+          ## run jupyter and convert to html
+      - name: 'Send Mail'
+        uses: dawidd6/action-send-mail@v18
+        with:
+          server_address: smtp.gmail.com
+          username: 
+          password: 
+          subject: Github Actions Test
+          to: ## relevant email addresses
+          html_body: file://
