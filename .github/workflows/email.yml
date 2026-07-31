@@ -10,8 +10,9 @@ jobs:
         uses: dawidd6/action-send-mail@v18
         with:
           server_address: smtp.gmail.com
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          connection_url: ${{ secrets.MAIL_CONNECTION }}
+          # username: ${{secrets.MAIL_USERNAME}}
+          # password: ${{secrets.MAIL_PASSWORD}}
           subject: Github Actions Test
           to: smartinez2@clevelandohio.gov,smurphy3@clevelandohio.gov
           from: LucasDePiglio@example.com
