@@ -19,25 +19,25 @@ jobs:
       server_address: smtp-mail.outlook.com
 
     # Server port, default 25:
-    server_port: 465
+      server_port: 465
 
     # Optional whether this connection use TLS (default is true if server_port is 465)
-    secure: true
+      secure: true
 
     # Optional (recommended) mail server username:
-    username: ${{secrets.MAIL_USERNAME}}
+      username: ${{secrets.MAIL_USERNAME}}
 
     # Optional (recommended) mail server password:
-    password: ${{secrets.MAIL_PASSWORD}}
+      password: ${{secrets.MAIL_PASSWORD}}
 
     # Required mail subject:
-    subject: Github Actions test
+      subject: Github Actions test
 
     # Optional recipients. Separate multiple addresses by a comma (possibly surrounded by whitespace):
-    to: smartinez2@clevelandohio.gov, smurphy3@clevelandohio.gov
+      to: smartinez2@clevelandohio.gov, smurphy3@clevelandohio.gov
 
     # Required sender (supported formats: see "Supported address formats" below)
-    from: 'Luke Skywalker <user@example.com>'
+      from: 'Luke Skywalker <user@example.com>'
 
     # Optional plain body:
-    body: nice
+      body: nice
