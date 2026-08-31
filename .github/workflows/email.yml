@@ -24,4 +24,4 @@ jobs:
           subject: Github Actions Test
           to: smartinez2@clevelandohio.gov,smurphy3@clevelandohio.gov
           from: LucasDePiglio@example.com
-          body: file://filename.txt
+          body: file://x.html
