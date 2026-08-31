@@ -13,7 +13,7 @@ jobs:
           ls -la
           echo "hello"
           ls -la ..
-          jupyter nbconvert --to html x.ipynb
+          jupyter nbconvert --to html x.ipynb --no-input
       - name: 'Send Mail'
         uses: dawidd6/action-send-mail@v18
         with:
