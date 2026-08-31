@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "generate file"
-        run: echo "This is my text" > filename.txt
+        run: |
+          echo "This is my text" > filename.txt
+          pwd
 
   email:
     runs-on: ubuntu-latest
