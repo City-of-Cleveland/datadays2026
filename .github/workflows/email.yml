@@ -6,8 +6,12 @@ jobs:
   email:
     runs-on: ubuntu-latest
     steps:
-      - name: "python file"
-        run: echo "This is my text" > filename.txt
+      - name: "Convert Notebook"'
+        uses: actions/setup-python@v6
+        run: |
+          pip install jupyter
+          pwd
+          jupyter nbconvert --to-html x.ipynb
       - name: 'Send Mail'
         uses: dawidd6/action-send-mail@v18
         with:
