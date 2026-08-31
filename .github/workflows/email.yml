@@ -11,7 +11,7 @@ jobs:
         run: |
           pip install jupyter
           pwd
-          jupyter nbconvert --to-html x.ipynb
+          jupyter nbconvert --to html x.ipynb
       - name: 'Send Mail'
         uses: dawidd6/action-send-mail@v18
         with:
