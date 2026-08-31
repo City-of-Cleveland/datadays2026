@@ -11,6 +11,7 @@ jobs:
 
   email:
     runs-on: ubuntu-latest
+    needs: python-run
     steps:
       - name: 'Send Mail'
         uses: dawidd6/action-send-mail@v18
@@ -22,4 +23,4 @@ jobs:
           subject: Github Actions Test
           to: smartinez2@clevelandohio.gov,smurphy3@clevelandohio.gov
           from: LucasDePiglio@example.com
-          body: I think we've got it
+          body: file://filename.txt
