@@ -3,6 +3,12 @@ name: 'Test workflow'
 on: workflow_dispatch
 
 jobs:
+  python-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "generate file"
+        run: echo "This is my text" > filename.txt
+
   email:
     runs-on: ubuntu-latest
     steps:
