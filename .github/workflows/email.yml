@@ -10,7 +10,7 @@ jobs:
       - name: "Convert Notebook"
         run: |
           pip install jupyter
-          jupyter nbconvert --to html analysis.ipynb --no-input
+          jupyter nbconvert --to html --execute analysis.ipynb --no-input
       - name: 'Send Mail'
         uses: dawidd6/action-send-mail@v18
         with:
